@@ -1,11 +1,14 @@
-alert("Hola mundo"); // Esto es un comentario
-
-/**
- * Comentario 
- * multi
- * linea
+/** Ejercicio 
+ * 4. Cálculo del perímetro de un cuadrado
+Solicita al usuario el valor del lado de un cuadrado (usando prompt) y muestra por pantalla su perímetro.
+Fórmula: Perímetro = lado × 4
  */
 
-console.log("Esto escribe en consola");
+const lado = prompt("Ingrese un lado")
 
-document.writeln("Esto escribe en el documento html");
+console.log("Se recibio el valor", lado)
+console.log("Y su tipo de dato es", typeof lado)
+
+let perimetro = lado * 4;
+
+document.writeln(`El perimetro del cuadrado de lado ${lado} es ${perimetro}`)

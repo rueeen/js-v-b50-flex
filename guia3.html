@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>3. Pide el nombre de usuario y contraseña. Si ambos coinciden con valores definidos, muestra "Acceso concedido",
+        si no, "Acceso denegado".</p>
+
+    <script>
+        const password_importante = "1234"
+        const usuario_importante = "admin"
+
+        const usuario = prompt("Ingrese usuario")
+        const password = prompt("Ingrese password")
+
+        /**
+        if(usuario === usuario_importante && password === password_importante){
+            document.writeln("Acceso concedido")
+        }else{
+            document.writeln("Acceso denegado")
+        }*/
+        const mensaje = usuario === usuario_importante && password === password_importante ? "Acceso concedido" : "Acceso denegado"
+
+        document.writeln(mensaje)
+
+    </script>
+</body>
+
+</html>

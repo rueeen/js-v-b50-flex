@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>2. Pide una nota entre 1.0 y 7.0. Debe mostrar la siguiente información: <br>
+        "Excelente" si es mayor o igual 6 <br>
+        "Aprobado" si es mayor o igual 4 y menor 6 <br>
+        "Reprobado" si es menor 4 </p>
+
+    <script>
+        const nota = Number(prompt("Ingrese su nota")) // str
+
+        if(nota < 1 || nota > 7){
+            document.writeln("Nota invalida")
+        } else if (nota >= 6) {
+            document.writeln("Excelente")
+        } else if (nota >= 4 && nota < 6) {
+            document.writeln("Aprobado")
+        } else {
+            document.writeln("Reprobado")
+        }
+    </script>
+</body>
+
+</html>

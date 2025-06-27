@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>7. Usa do while para permitir al usuario adivinar un número aleatorio entre 1 y 10, hasta acertar.</p>
+
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        const adivina = getRandomInt(10) + 1;
+        let adivinando;
+
+        do {
+            adivinando = Number(prompt('Ingrese un numero entre 1 y 10 hasta adivinar'))
+        }while(adivina !== adivinando)
+
+        document.writeln("ADIVINASTE !!!")
+    </script>
+</body>
+
+</html>

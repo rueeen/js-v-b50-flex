@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>4. Solicita al usuario el nombre de un día. Usa switch para mostrar:
+        Lunes → "Inicio de semana"
+        Viernes → "Casi fin de semana"
+        Domingo → "Día de descanso"
+        Otro → "Día normal"
+    </p>
+
+    <script>
+        const dia = prompt("Ingrese dia de la semana").toLowerCase()
+
+        switch(dia){
+            case 'lunes':
+                document.writeln("Inicio de semana");
+                break;
+            case 'viernes':
+                document.writeln("Casi fin de semana");
+                break;
+            case 'domingo':
+                document.writeln("Día de descanso");
+                break;
+            default:
+                document.writeln("Día normal");
+        }   
+    </script>
+</body>
+
+</html>
