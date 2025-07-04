@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo-principal">Hola mundo</h1>
+    <h2 id="titulo-secundario">Hola mundo</h2>
+    <h2 class = 'subtitulo'>Hola mundo</h2>
+    <h3>Hola mundo</h3>
+    <h3>Hola mundo</h3>
+
+    <script>
+        const h1 = document.getElementById("titulo-principal")
+        const h1_null = document.getElementById("titulo-")
+        console.log(h1)
+        console.log(h1_null)
+
+        const h2 = document.querySelector('#titulo-secundario')
+        console.log(h2)
+
+        const h2_class = document.querySelector('.subtitulo')
+        console.log(h2_class)
+
+        const h3_body = document.querySelector('h3')
+        console.log(h3_body)
+        
+        //const h2s = document.getElementsByClassName()
+        const h3s = document.querySelectorAll('h3')
+        console.log(h3s);
+        
+    </script>
+</body>
+</html>

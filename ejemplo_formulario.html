@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .formulario {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="formulario">
+        <label for="">Nombre:</label>
+        <input type="text" id="nombre">
+        <label for="">Edad:</label>
+        <input type="number" id="edad">
+        <label for="">Contraseña:</label>
+        <input type="password" id="password">
+        <label for="" >Tiene licencia?</label>
+        <input type="checkbox" id="licencia" value="Si">
+        <input id="btn-agregar" type="button" value="Agregar">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Tiene licencia?</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla">
+            <!--
+            <tr>
+                <td>Perico</td>
+                <td>33</td>
+                <td>true</td>
+            </tr>
+            -->
+        </tbody>
+    </table>
+
+    <script src="js/script_formulario.js"></script>
+</body>
+
+</html>
